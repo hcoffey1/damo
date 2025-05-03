@@ -201,6 +201,7 @@ def fmt_heats(args, address_range_idx, __records):
     return '\n'.join(lines)
 
 def pr_heats(args, __records):
+    print(args.address_range)
     for idx in range(len(args.address_range)):
         print(fmt_heats(args, idx, __records))
 
